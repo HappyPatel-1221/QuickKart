@@ -1,10 +1,33 @@
+# Dependencies
 node_modules/
-dist/
-*.pdf
-*.env
-*.env.local
+**/node_modules/
+
+# Environment Variables
 .env
-server/.env
-client/.env
-.DS_Store
+.env.local
+.env.*
+**/.env
+**/.env.*
+
+# Build outputs
+dist/
+**/dist/
+build/
+**/build/
+
+# Prisma Generated Client
+server/generated/
+
+# Logs
+logs
 *.log
+npm-debug.log*
+
+# System Files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Project PDF
+*.pdf
